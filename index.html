@@ -11,6 +11,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     />
+    <!-- style switcher -->
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled />
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
+
+
+
+    <link rel="stylesheet" href="css/style-switrcher.css">
   </head>
   <body>
     <!-- main contaner start -->
@@ -18,17 +28,17 @@
       <!-- aside start -->
        <div class="aside">
         <div class="logo">
-          <a href="#"><span>A</span>tlas</a>
+          <a href="#"><span>M</span>ohammed</a>
         </div>
         <div class="nav-toggler">
             <span></span>
         </div>
         <ul class="nav">
-          <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-          <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-          <li><a href="#"><i class="fa fa-list"></i> Services </a></li>
-          <li><a href="#"><i class="fa fa-briefcase"> </i> Portfolio</a> </i></li>
-          <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
+          <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+          <li><a href="#services"><i class="fa fa-list"></i> Services </a></li>
+          <li><a href="#portfolio"><i class="fa fa-briefcase"> </i> Projects</a> </i></li>
+          <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
         </ul>
        </div>
        <!-- aside end -->
@@ -37,26 +47,25 @@
 
        <div class="main_content">
         <!-- hero section start -->
-         <section class="home section hidden">
-             <div class="contaner">
+        <section class="home section active" id="home">
+            <div class="container">
                 <div class="row">
-<div class="home-info padd-15">
-    <h3 class="hello">Hello, my name is <span class="name">Mohammed Al Qedrh</span></h3>
-    <h3 class="my-profession">I'm a <span class="typing">web developer</span></h3>
-    <p> i am a web developer.  i can provide you with quality work at a reasonable price and on time ,and many more...   </p>
-    <!-- make it work -->
-    <a href="#contact" class="btn Download-me">Download CV</a>
-</div>
-
-<div class="home-img padd-15">
-    <img src="images/hero.jpg" alt="hero">
-
+                    <div class="home-info padd-15">
+                        <h3 class="hello">Hello, my name is <span class="name">Mohammed Al Qedrh</span></h3>
+                        <h3 class="my-profession">I'm a <span class="typing">web developer</span></h3>
+                        <p>I am a web developer. I can provide you with quality work at a reasonable price and on time, and many more...</p>
+                        <button id="download-cv" class="btn Download-me">Download CV</button>
+                    </div>
+        
+                    <div class="home-img padd-15">
+                        <img src="images/hero.jpg" alt="hero">
+                    </div>
                 </div>
-             </div>
-         </section>
+            </div>
+        </section>
          <!-- hero section end -->
           <!-- about section start -->
-           <section class="about section">
+           <section class="about section   " id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -105,26 +114,343 @@ love my major as softwere engineer
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="buttons">
-                                    <a href="#" class="btn">Download CV</a>
-                                    <a href="#contact" class="btn hire-me">Hire Me</a>
+                                <div class="buttons padd-15">
+                                     <a href="#contact" data-sectione-index="1" class="btn hire-me">Hire Me</a>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="skills padd-15">
+                                <div class="row">
+                                    <div class="skill-item padd-15">
+                                        <h5>HTML</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 90%;"></div>
+                                            <div class="skill-percent">90%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>CSS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 75%;"></div>
+                                            <div class="skill-percent">75%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>BOOTSTRAP</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 65%;"></div>
+                                            <div class="skill-percent">65%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>JS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 85%;"></div>
+                                            <div class="skill-percent">85%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>PHP</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 80%;"></div>
+                                            <div class="skill-percent">80%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>LARAVEL</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 85%;"></div>
+                                            <div class="skill-percent">85%</div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item padd-15">
+                                        <h5>WORDPRESS</h5>
+                                        <div class="progress">
+                                            <div class="progress-in" style="width: 75%;"></div>
+                                            <div class="skill-percent">75%</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="education padd-15">
+                                <h3 class="title">Education</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
 
-                            <div class="skills padd-15">skills</div>
+                                        <div class="timeline shadow-dark">
+                                             <!-- timeline item -->
+                                              <div class="timeline-item">
+                                                  <div class="circle-dot"> </div>
+                                                      <h3 class="timeline-date">
+                                                          <i class="fa fa-calendar"></i> 2022 - present
+                                                      </h3>
+                                                      <h4 class="timeline-title">Bachlor in softwere engineer</h4>
+                                                      <p class="timeline-text"> i am a bachlor in softwere engineer at aqaba university of technology</p>
+                                                 
+                                              </div>
+                                             <!-- timeline item -->
+                                              <div class="timeline-item">
+                                                  <div class="circle-dot"></div>
+                                                      <h3 class="timeline-date">
+                                                          <i class="fa fa-calendar"></i> May 2024 - Nov 2024 
+                                                      </h3>
+                                                      <h4 class="timeline-title">orange academy</h4>
+                                                      <p class="timeline-text">i  graduated from orange academy as a full stack web developer </p>
+                                                  
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                                <div class="experience  padd-15">
+                                <h3 class="title">experience</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+
+                                        <div class="timeline shadow-dark">
+                                               <div class="timeline-item">
+                                                  <div class="circle-dot"></div>
+                                                      <h3 class="timeline-date">
+                                                          <i class="fa fa-calendar"></i>May 2022 - Nov 2022
+                                                      </h3>
+                                                      <h4 class="timeline-title">full stack web developer</h4>
+                                                      <p class="timeline-text">i have been a trainee at orange academy as a full stack web developer</p>
+                                                  
+                                              </div>
+                                               <div class="timeline-item">
+                                                  <div class="circle-dot"> </div>
+                                                      <h3 class="timeline-date">
+                                                          <i class="fa fa-calendar"></i> Nov 2024 - present 
+                                                      </h3>
+                                                      <h4 class="timeline-title">freelancer</h4>
+                                                      <p class="timeline-text">i have been working on my self as a freelancer  </p>
+                                                 
+                                              </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-           </section>
+            
+            </section>
 
            <!-- about section end -->
+            <!-- service section start -->
+            <section class="service section  " id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-mobile-alt"></i>
+                                </div>
+                                <h4>Responsive Design</h4>
+                                 <p>Creating mobile-friendly, responsive layouts that look great on any device, ensuring a seamless user experience.</p>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                        <!-- service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                 <p>Building high-quality websites using the latest technologies, tailored to meet your business needs.</p>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                        <!-- service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>UI/UX Design</h4>
+                                <p>Designing intuitive and visually appealing user interfaces to enhance the user experience and engagement.</p>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                        <!-- service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-code"></i>
+                                </div>
+                                <h4>Custom Web Applications</h4>
+                                <p>Developing custom web applications that are scalable, secure, and tailored to your specific requirements.</p>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                        <!-- service item start -->
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                                <h4>SEO Optimization</h4>
+                                <p>Improving website visibility through effective search engine optimization techniques to drive organic traffic.</p>
+                            </div>
+                        </div>
+                        <!-- service item end -->
+                    </div>
+                </div>
+            </section>
+            
 
+  
+ 
+            <!-- service section end -->
+             <!-- portfolio section start -->
+              <section class="portfolio section  " id="portfolio"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>my projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>My Last Projects:</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/projects/task1.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                 
+                        <!-- portfolio item start -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/projects/sweetkit.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                         <!-- portfolio item end -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/projects/mastrpeace.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                         <!-- portfolio item end -->
+                         <!-- portfolio item end -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/projects/allabout aqaba.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                         <!-- portfolio item end -->
+                         <!-- portfolio item end -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/projects/artinova.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                         <!-- portfolio item end -->
+                         <!-- portfolio item end -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/projects/hive net.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                         <!-- portfolio item end -->
+                         <!-- portfolio item end -->
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="images/projects/taskflow.png" alt="portfolio">
+                                </div>
+                            </div>
+                        </div>
+                         <!-- portfolio item end -->
+                    </div>
+                </div>
+
+              </section>
+              <!-- portfolio section end -->
+               <!-- contact section start -->
+               <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">lets work together</h3>
+                    <h4 class="contact-sub-title padd-15">FOLLOW ME ON SOCIAL MEDIA</h4>
+            
+                    <!-- Social Media Links -->
+                    <div class="row" style="display: flex; justify-content: center;">
+                        <div class="social-icons padd-15">
+                            <a href="https://www.facebook.com/mohammed.gidrah/" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <!-- <a href="https://www.twitter.com/YourProfile" target="_blank"><i class="fab fa-twitter"></i></a> -->
+                            <a href="https://www.linkedin.com/in/mohammed-alqidrah-452611307/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/mohammed_qidrah/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://github.com/mohammedgidrah?page=2&tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+                <!-- contact section end -->
        </div>
         <!-- main contant end -->
 
     </div>
     <!-- main contaner end -->
+     <!-- style switcher  start-->
+     <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+     </div>
+      <!-- style switcher end -->
+     <!-- js file -->
+     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="js/script.js"></script>
+     <script src="js/style-switcher.js"></script>
   </body>
 </html>
